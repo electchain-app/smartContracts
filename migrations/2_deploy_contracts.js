@@ -1,5 +1,5 @@
-const ballot = artifacts.require("ballot");
+const BallotSmartContract = artifacts.require("BallotSmartContract.sol");
 
 module.exports = function(deployer) {
-  deployer.deploy(ballot, ['0x4d616e6f6c6f00000000000000000000', '0x4d616e6f6c6f00000000000000000000']);
+  deployer.deploy(BallotSmartContract, ['0x50726f706f736974696f6e2041000000','0x50726f706f736974696f6e2042000000'], ['0x4a6f7365706820522e20426964656e00','0x446f6e616c64204a2e205472756d7000'], ['0x52616661656c20456477617264204372757a','0x526f62657274204672616e636973204f27526f75726b65']);
 };
